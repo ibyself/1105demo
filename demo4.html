@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东轮播图</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.clearfix::before,.clearfix::after{
+			content:"";
+			display:table;
+			clear:both;
+		}
+		.img-list{width:590px;height:470px;margin:0 auto;position:relative;}
+		.img-list li{position:absolute;}
+		.img-list li a{display:block;}
+		.pointer{position:absolute;bottom:20px;left:30px;}
+		.pointer a{float:left;width:9px;height:9px;background:rgba(255,255,255,.4);border:3px solid rgba(255,255,255,.04);border-radius:50%;background-clip:content-box;}
+		.pointer a.active,.pointer a:hover{border:3px solid rgba(255,255,255,.2);background-color:#fff;}
+	</style>
+</head>
+<body>
+	<ul class="img-list">
+		<li><a href="#"><img src="images/3/1.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3/2.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3/3.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3/4.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3/5.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3/6.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3/7.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3/8.jpg" alt=""></a></li>
+		<div class="pointer clearfix">
+			<a href="#" class="active"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+	</ul>
+</body>
+</html>

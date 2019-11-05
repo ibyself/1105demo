@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易新闻列表</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.new-wrapper {
+			width: 300px;
+			height: 362px;
+			margin: 100px auto;
+			border-top:1px solid #ddd;
+		}
+		.new-wrapper h2 {
+			display:inline-block;
+			border-top:1px solid #f34540;
+			margin-top:-1px;
+			padding:9px 0;
+			font-weight:bold;
+		}
+		.new-wrapper .new-img {
+			height:150px;
+			position:relative;
+			margin-bottom:20px;
+		}
+		.new-wrapper .new-img a {
+			display:block;
+		}
+		.new-wrapper .new-img h3 {
+			position:absolute;
+			bottom:12px;
+			left:36px;
+			color:#fff;
+			font-weight:bold;
+			cursor:pointer;
+		}
+		.new-wrapper .new-list {
+			height: 160px;
+		}
+		.new-wrapper .new-list li::before{
+			content:"■";
+			color:#ddd;
+			margin-right:8px;
+		}	
+		.new-wrapper .new-list li{
+			margin-bottom:18px;
+		}
+		.new-wrapper .new-list li a{
+			color:#666;
+			font-size:14px;
+			text-decoration:none;
+		}
+		.new-wrapper .new-list li a:hover{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<div class="new-wrapper">
+		<h2>体育</h2>
+		<div class="new-img">
+			<a href="#">
+				<img src="images/2/1.jpeg" alt="">
+				<h3>费德勒首负迪米 扶额摇头不满发挥</h3>
+			</a>
+		</div>
+		<ul class="new-list">
+			<li><a href="#">乔治:我爱LA 喜欢和LBJ一起打球</a></li>
+			<li><a href="#">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a></li>
+			<li><a href="#">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a></li>
+			<li><a href="#">CBA下季新赛制:常规赛4组循环 增至46轮</a></li>
+		</ul>
+	</div>
+</body>
+</html>
